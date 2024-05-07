@@ -1,3 +1,10 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
 nav {
    
     background-color: steelblue; padding: 10px;
@@ -23,4 +30,29 @@ h1 {
 
  p {
     padding: 10px;
+ }
+
+ /* Calss Selectors*/
+
+ .box{
+    margin:1rem;
+    border:2px solid rgb(59, 40, 40,);
+    padding:1rem;
+    background-color: beige;
+    color:antiquewhite;
+ }
+
+  aside{
+    width:35em;
+    flex:right;
+    position: relative;
+ }
+
+ main img { 
+    float: right;
+    
+    
+
+    
+
  }
