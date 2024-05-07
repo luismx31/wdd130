@@ -20,17 +20,49 @@ h1 {
     color: steelblue;
  }
 
- img {
+ main img {
     width: 150px;
     height: auto;
     border: 1px solid steelblue;
     padding: 2px;
     box-shadow: 0 0 30px gray;
+    float:right;
+    margin:0;
+
  }
 
  p {
     padding: 10px;
  }
+
+ aside{
+    width:30em;
+    position: relative;
+    text-align: center;
+ }
+
+aside img {
+    width:300px;
+    height:auto;
+}
+
+
+aside h2{
+    position:absolute;
+    left: 100px;
+    top:150px;
+    color:#342905
+
+}
+
+footer {
+    margin:1em;
+    border-top:2px solid #000;
+    text-align:center;
+}
+
+
+
 
  /* Calss Selectors*/
 
@@ -39,20 +71,10 @@ h1 {
     border:2px solid rgb(59, 40, 40,);
     padding:1rem;
     background-color: beige;
-    color:antiquewhite;
+    color:rgb(122, 75, 14);
  }
 
-  aside{
-    width:35em;
-    flex:right;
-    position: relative;
- }
+  
 
- main img { 
-    float: right;
-    
-    
 
-    
 
- }
