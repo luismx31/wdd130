@@ -26,6 +26,11 @@
 h1 {
     font-size:25px;
     position:absolute;
+    bottom:150px;
+    left:5px;
+    color:rgb(66, 100, 157);
+    background-color: rgb(231, 197, 177, 50%);
+    padding:5px;
 }
 
 h2 {
@@ -41,14 +46,12 @@ h2 {
     display: block;
     width: 100%;
     height: auto;
-    position:absolute;
     
 }
 
 #img1 {
   max-width:100px;
  float: right;
- position:absolute;
    
 }
 
@@ -56,7 +59,5 @@ h2 {
     position:relative;
 }
 
-
- 
 
  
