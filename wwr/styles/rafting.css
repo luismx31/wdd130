@@ -166,15 +166,31 @@ section {
 }
 
 footer {
-    display:flex;
+    display: grid;
+    align-items:center;
     justify-content:center;
+    grid-template-columns:  2fr 2fr 2fr 2fr;
+}
+
+footer p{
+    display:flex;
+    align-items:center;
+    grid-column-start:2;
+    grid-column-end:4;
 
 }
 
 .icons{
-    display:flex;
-    align-items:center;
-    position:absolute;
+   
     bottom:-150px;
     right:10px;
+    grid-column: 4/6;
+    display:flex;
+    gap:10px;
+    justify-content:end;
+
+
+
+    
 }
+
