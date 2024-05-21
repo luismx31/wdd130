@@ -7,9 +7,11 @@
 
 header {
     display: grid;
-    grid-template-columns: 250px 60% ;
+    grid-template-columns: 200px 60% ;
     align-items: center;
     max-width: 1000px;
+    background-color: white;
+    
    
 
 }
@@ -18,11 +20,13 @@ nav {
     display:flex;
     justify-content: space-between;
     margin-right: 20px;
+    margin-right:10px;
+    
    
 }
 
 .logo {
-    margin-left:20px;
+    margin-left:50px;
     margin-bottom: 10px;
 }
 
@@ -49,25 +53,26 @@ h1 {
 
 
 .hero img { 
-    display: flex;
+    display:block;
     width: 100%;
-    height: auto;
-
+    height: 300px;
+    object-fit:cover;
+    
    
 }
 
 article {
     color:aliceblue;
     background-color: rgba(0, 0, 0, 0.5);
-    padding-bottom: 40px;
-    padding-top:10px;
+    padding-bottom: 50px;
+    padding-top:25px;
     padding-left:10px;
     padding-right:10px;
     position: absolute;
-    left:0;
-    right:0;
-    bottom:10px;
-    top:90px;
+    left:60px;
+    right:60px;
+    bottom:60px;
+    top:100px;
     padding-left:50px
 
 
@@ -86,6 +91,8 @@ article {
   float:right;
   padding-right:50px;
   
+  
+  
 
 }
 
@@ -94,17 +101,15 @@ article {
 section {
     display:flex;
     align-items:center;
-    height:80vh;
+    height:100vh;
     justify-content: center;
-    bottom:px;
-
 }
 
 .container {
     display:grid;
     grid-template-columns:repeat(5,1fr);
     grid-template-rows: repeat(2, auto);
-    gap: 10px;
+    gap:20px;
 }
 
 .container img {
@@ -113,7 +118,7 @@ section {
     object-fit:cover;
     grid-row-start: 2;
     justify-content:center;
-    padding-top:10px;
+    padding-top:5px;
 }
 .container h2 {
     color: #DEAD7C;
@@ -175,6 +180,7 @@ footer {
 footer p{
     display:flex;
     align-items:center;
+    justify-content:center;
     grid-column-start:2;
     grid-column-end:4;
 
