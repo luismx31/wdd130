@@ -1,0 +1,148 @@
+
+@font-face {
+    font-family : 'Merriweather';
+    font-style : normal;
+    font-weight : 400;
+    font-display : swap;
+    src : url(https://fonts.gstatic.com/s/merriweather/v30/u-440qyriQwlOrhSvowK_l5-cSZMdeX3rsHo.woff2) format('woff2');
+    unicode-range : U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body {
+    font-family : 'Roboto';
+    font-style : normal;
+    font-weight : 400;
+    color: #333;
+    background-color: #fff
+}
+
+header {
+    margin:0 auto;
+}
+
+h1 {
+    margin: 1rem;
+    font-size: 1.5em;
+    color:navy;
+    text-align:center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+form {
+    width: 650px;
+    margin:0 auto;
+    padding:1rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    background-color: #eee;
+    display: grid;
+}
+
+legend{
+    padding: 0.5rem;
+    color:navy;
+    font-size:1.4em;
+
+}
+
+label, button, select, input, textarea {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.3rem;
+}
+
+label{
+    text-align:right;
+    padding-right:1.5rem;
+}
+
+input, select, textarea {
+    padding: 0.3rem;
+    font-size:1.1rem;
+    
+}
+
+input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+    vertical-align: bottom;
+    
+}
+
+button {
+    margin: 2rem;
+    background-color: navy;
+    color: #fff;
+    border: none;
+    border-radius: .5rem;
+    padding: .7rem;
+    font-size: 20px;
+    width:120px;
+    
+
+    
+  
+
+    
+}
+button:hover {
+    background-color: darkgreen;
+
+}
+
+footer{
+    margin: 1rem auto 0;
+    width: 650px;
+    text-align:center;
+    font-size:0.8em;
+    color: #777;
+    border-top: 1px solid #ccc;
+   
+}
+
+.form-item{
+    display:grid;
+    
+    
+
+}
+.column1{
+    grid-template-columns: 3fr 1fr;
+    margin:1.5rem 0;
+    padding:1rem;
+}
+
+.column2 {
+    grid-template-columns: 1fr 2fr;
+    margin: 1rem;
+       
+}
+
+.feedback {
+    padding: 1rem;
+   grid-template-columns: ;
+
+    
+    
+}
+
+fieldset{
+    color:#5e5e5e;
+    border: 1px solid #bababa
+    
+}
+    
+
+    
+
+
+.submit{
+    display:flex;
+    justify-content:center;
+    
+}

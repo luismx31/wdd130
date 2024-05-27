@@ -1,8 +1,8 @@
-number = int(input("Please type a positive number:"))
+list1 = [10,20,30]
 
-while number < 0:
-    print("sorry, that is a negative umber. please try again.")
-    number = int(input("Please type a positive number:"))
-    
+sum_list = 0
 
-    print(f"The number is {number}")
+for i in list1:
+    sum_list = sum_list+i
+
+print(f"the total is {sum_list}")
