@@ -1,0 +1,181 @@
+@font-face {
+    font-family : 'Roboto';
+    font-style : normal;
+    font-weight : 400;
+    font-display : swap;
+    src : url(https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu5mxKKTU1Kvnz.woff2) format('woff2');
+    unicode-range : U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+   
+}
+
+header, .grid,main,  footer {
+    max-width: 1000px;
+    margin: 0 auto;
+} 
+
+:root { background-color: #FBF5EF;
+    color:#DEAD7C ;
+    color:rgb(115, 55, 18);
+   
+  }
+
+header {
+    display: grid;
+    grid-template-columns: 200px 70% ;
+    align-items: center;
+    background-color: white;
+}
+
+nav {
+    display:flex;
+    justify-content: space-between; 
+    justify-items: center; 
+}
+
+.logo {
+    margin: 10px;
+}
+
+.column1 {
+    display:grid;
+    margin: 2rem;
+    border-bottom:2px solid #000;
+    padding-bottom: 1.5rem;
+    
+
+}
+.contact_info img{
+   float:left;
+   margin-right:10px;
+   
+
+}
+
+.contact_info{
+    grid-row-start: 1;
+    grid-column-end: 3;
+    margin: 2rem;  
+}
+
+
+.google_maps{
+
+    grid-row-start: 1;
+    grid-column-end: 4;
+    margin: 1rem;   
+}
+
+.employees_pic{
+    display:flex;
+    justify-content: center;
+    
+}
+
+.column2{
+    display:grid;
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 150px 100px;
+    
+}
+
+.pic1{
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+}
+
+.pic2{
+    grid-column-start: 3;
+}
+
+.pic3{
+    grid-row-start:4 ;
+
+}
+
+footer {
+    display: grid;
+    align-items:center;
+    justify-content:center;
+    grid-template-columns:  2fr 2fr 2fr 2fr;
+}
+
+footer p{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    grid-column-start:2;
+    grid-column-end:4;
+
+}
+
+.icons{
+   
+    bottom:-150px;
+    right:10px;
+    grid-column: 4/6;
+    display:flex;
+    gap:10px;
+    justify-content:end;
+  
+}
+
+.staff_text{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+legend{
+    padding: 0.5rem;
+    color:rgb(0, 0, 0);
+    font-size:1.2em;
+}
+
+form {
+    width: 650px;
+    margin:0 auto;
+    padding:1rem;
+    display: grid;
+    justify-content: center;
+}
+
+fieldset{ 
+    font-size: 1.2rem;
+}
+
+.form-item{
+    display:grid;
+}
+
+.column3{
+    grid-template-rows: 1fr 1.3fr 1fr 1.3fr;
+
+}
+
+.newsletter{
+    margin:10px;
+}
+
+.submit{
+    display:flex;
+    justify-content:center;
+    
+}
+
+button {
+    margin: 2rem;
+    background-color: rgb(76, 161, 221);
+    color: #fff;
+    border: none;
+    border-radius: .5rem;
+    padding: .7rem;
+    font-size: 20px;
+    width:600px;  
+    
+}
+
+button:hover {
+    background-color: rgb(105, 205, 105);
+}
+
