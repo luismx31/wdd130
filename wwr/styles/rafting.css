@@ -11,13 +11,20 @@
 :root { background-color: #FBF5EF;
     color:#DEAD7C ;
     color:rgb(115, 55, 18);
-   
+
   }
+
+  header, .grid,main,  footer {
+    max-width: 1000px;
+    margin: 0 auto;
+    justify-content:center;
+} 
 
 header {
     display: grid;
     grid-template-columns: 200px 60% ;
     align-items: center;
+    justify-content:center;
     background-color: white;
     
    
@@ -27,21 +34,15 @@ header {
 nav {
     display:flex;
     justify-content: space-between;
+     
    
-    
-   
-}
-
-.logo {
-    margin-left:50px;
-    margin-bottom: 10px;
 }
 
 
 
 
 h1 {
-    font-size: 30px;
+    font-size: 40px;
     position:absolute;
     color:rgb(255, 255, 255);
     background-color: rgba(0, 0, 0, 0.5);
@@ -54,6 +55,7 @@ h1 {
 
 .hero {
     position:relative;
+    margin-top:30px;
   
 }
 
@@ -61,33 +63,27 @@ h1 {
 .hero img { 
     display:block;
     width: 100%;
-    height: 300px;
+    height: 500px;
     object-fit:cover;
     
-   
+    
+    
 }
 
 article {
     color:aliceblue;
     background-color: rgba(0, 0, 0, 0.5);
-    padding-bottom: 50px;
+    padding-bottom: 10px;
     padding-left:10px;
     padding-right:10px;
     position: absolute;
     left:60px;
     right:60px;
-    bottom:30px;
+    bottom:200px;
     top:100px;
     padding-left:50px
-
-
-
-
-  
+ 
 }
-
-
-
 
 
 #img1 {
@@ -96,87 +92,66 @@ article {
   float:right;
   padding-right:50px;
   
-  
-  
-
+ 
 }
 
 
-
-.part2 {
-    display:flex;
-    align-items:center;
-    height:100vh;
-    justify-content: center;
-}
 
 .container {
-    display:grid;
-    grid-template-columns:repeat(5,1fr);
-    grid-template-rows: repeat(2, auto);
+    
     gap:20px;
+    flex-wrap: wrap;
 }
 
 .container img {
-    width: 150px;
-    height: 150px;
+    width: 300px;
+    height: 250px;
     object-fit:cover;
-    grid-row-start: 2;
-    justify-content:center;
-    padding-top:5px;
+    
 }
-.container h2 {
-    color: #DEAD7C;
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size:30px;
-    display: flex;
-    justify-content:center;
-    grid-column-start: 2;
-    grid-column-end:  5;
-    align-items:center;
+
+.first_container p{
+    text-align:center;
+    font-size:25px;
+    margin:20px;
+
+}
+   
+h2 {
+    color: #3460a6;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size:35px;
+    text-align: center;
     padding-top:50px;
   
 }
+.second_container img{
+    width:320px;
+    height:250px;
+    object-fit:cover;
+    box-shadow: 0 0 30px gray;
 
+    
+}
 
-.section1 {
+.second_container{
     display:flex;
-    justify-content:center;
-    height:1vh; 
-}
-
-.first_container{
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows:2fr;
-    gap: 5px;
-    justify-content: center;;
-}
-
-.first_container h2{
-    color: #DEAD7C;
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size:30px;
-    display: flex;
-    justify-content:center;
-    grid-column: span 1 / 3;
-   
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: center;
+    align-items:center;
 
 }
 
-.first_container p {
-    grid-column: 1/4;
-}
 
 footer {
     display: grid;
     align-items:center;
     justify-content:center;
     grid-template-columns:  2fr 2fr 2fr 2fr;
+    margin-top:30px;
+    border-top: 2px solid black;
+    margin-top:60px;
 }
 
 footer p{
@@ -196,9 +171,6 @@ footer p{
     display:flex;
     gap:10px;
     justify-content:end;
-
-
-
-    
+ 
 }
 

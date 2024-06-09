@@ -8,22 +8,26 @@
    
 }
 
-header, .grid,main,  footer {
+header,main, .grid,  footer {
     max-width: 1000px;
     margin: 0 auto;
 } 
 
-:root { background-color: #FBF5EF;
-    color:#DEAD7C ;
-    color:rgb(115, 55, 18);
-   
+:root { background-color: #FBF5EF; 
   }
 
 header {
     display: grid;
-    grid-template-columns: 200px 70% ;
+    grid-template-columns: 200px 60% ;
     align-items: center;
     background-color: white;
+    justify-content: center;
+
+}
+
+main img{
+    box-shadow: 0 0 30px gray;
+
 }
 
 nav {
@@ -32,66 +36,101 @@ nav {
     justify-items: center; 
 }
 
-.logo {
-    margin: 10px;
-}
-
-.column1 {
-    display:grid;
-    margin: 2rem;
-    border-bottom:2px solid #000;
-    padding-bottom: 1.5rem;
+.intro{
+    position:relative;
+    display:flex;
+    justify-content: center;
+    max-width:1000px;
+   
     
+}
+
+.intro img{
+    height: 500px;
+    width: 100%;
+    display:block;
+    object-fit: cover;
+    
+}
+
+.intro h1{
+    position:absolute;
+    color:#fff;
+    font-size: 90px;
+    text-align:center;
+    background-color: rgba(53, 53, 53, 0.5);
+} 
+
+.button{
+    position:absolute;
+    top:250px;
+}
+
+h2{
+    text-align:center;
+    font-size:50px;
+    color:rgb(255, 255, 255);
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-shadow: 0 0 30px gray;
+
 
 }
-.contact_info img{
-   float:left;
-   margin-right:10px;
+
+section{
+   display:grid;
+   grid-column: 1fr 1fr;
+   grid-row: 1fr 1fr;
+   gap:0px;
+
+}
+section p{
+    color:#502e0c;
+    font-size:30px;
+    display:flex;
+
    
 
 }
 
-.contact_info{
-    grid-row-start: 1;
-    grid-column-end: 3;
-    margin: 2rem;  
-}
-
-
-.google_maps{
-
-    grid-row-start: 1;
-    grid-column-end: 4;
-    margin: 1rem;   
-}
-
-.employees_pic{
-    display:flex;
-    justify-content: center;
+.img1{
+    grid-row-start:1;
+    grid-column-end:2;
     
 }
 
-.column2{
-    display:grid;
-    grid-template-columns: 200px 200px;
-    grid-template-rows: 150px 100px;
+section p {
+    grid-column-start:2;
+    grid-column-end:3;
+ 
+}
+
+.img2{
+    grid-column-start:2;
+    grid-column-end:3;
+    width: auto; 
+    object-fit: cover; 
+    display:flex; 
+    justify-content: end;
     
-    
 }
 
-.pic1{
-    grid-row-start: 1;
-    grid-row-end: 2;  
-}
-
-.pic2{
-    grid-column-start: 3;
-}
-
-.pic3{
-    grid-row-start:4 ;
+.second_p{
+    grid-row-start:2;
+    grid-row-end:3;
+    font-size: 25px;
 
 }
+
+figcaption{
+    font-size:25px;
+}
+
+
+
+
+
+
+
 
 footer {
     display: grid;
@@ -120,11 +159,6 @@ footer p{
   
 }
 
-.staff_text{
-    display:flex;
-    align-items: center;
-    justify-content: center;
-}
 
 legend{
     padding: 0.5rem;
@@ -133,7 +167,7 @@ legend{
 }
 
 form {
-    width: 650px;
+    width: 700px;
     margin:0 auto;
     padding:1rem;
     display: grid;
@@ -154,24 +188,19 @@ fieldset{
 }
 
 .newsletter{
-    margin:10px;
+    margin-top:20px;
 }
 
-.submit{
-    display:flex;
-    justify-content:center;
-    
-}
 
 button {
     margin: 2rem;
-    background-color: rgb(76, 161, 221);
+    background-color: rgb(14, 69, 109);
     color: #fff;
     border: none;
     border-radius: .5rem;
     padding: .7rem;
-    font-size: 20px;
-    width:600px;  
+    font-size: 30px;
+    width:580px;  
     
 }
 
